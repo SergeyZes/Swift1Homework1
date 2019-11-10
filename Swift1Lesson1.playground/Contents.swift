@@ -32,5 +32,12 @@ let S = 0.5 * K1 * K2
 
 print("Гипотинуза = \(Hyp), периметр = \(Per), площадь = \(S)")
 
+//Задание 3: mon - сумма вклада, per - годовой процент
 
+let mon = 500000.0
+let per = 6.5
 
+let sumNoCap = mon + mon * per / 100 * 5
+let sumWithCap = mon * pow(1 + per / 100, 5)
+
+print("Сумма вклада через 5 лет без капитализации процента = \(sumNoCap), и с капитализацией процента = \(sumWithCap)")
